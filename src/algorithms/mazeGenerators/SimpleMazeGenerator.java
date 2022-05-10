@@ -11,7 +11,6 @@ public class SimpleMazeGenerator extends AMazeGenerator {
         {
             for(int j=0;j<col;j++)
             {
-
                 emptyMatrix[i][j] = ran.nextInt(2);
             }
         }
