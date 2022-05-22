@@ -10,7 +10,7 @@ public class miniMain {
                 IMazeGenerator maze = new EmptyMazeGenerator();
                 Maze myMaze = maze.generate(10,10);
                 myMaze.myPrint();
-                //System.out.print(myMaze);
+                System.out.print(myMaze);
                 //System.out.println(maze.measureAlgorithmTimeMillis(500,57878));
 
 
