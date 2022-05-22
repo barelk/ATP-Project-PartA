@@ -10,12 +10,12 @@ public class Maze {
     public Maze(int row, int col) {
         this.col = col;
         this.row = row;
-        for (int i=0; i<row; i++){
-            for (int j=0; j<col;j++){
-                visit[i][j] = false;
+        //for (int i=0; i<row; i++){
+          //  for (int j=0; j<col;j++){
+            //    visit[i][j] = false;
             }
-        }
-    } // complete to string method...
+        //}
+     // complete to string method...
     public Boolean getVisit(int row, int col){
         return visit[row][col];
     }
