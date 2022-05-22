@@ -1,5 +1,7 @@
 package algorithms.mazeGenerators;
 
+import java.util.ArrayList;
+
 public class Cell {
     private int x;
     private int y;
@@ -34,4 +36,19 @@ public class Cell {
     public void setVisit(Boolean visit) {
         this.visit = visit;
     }
+
+    public ArrayList<Cell> getNeighbors(Cell cell, Maze maze) {
+        // here i will return all my available neigbors..
+        ArrayList<Cell> frontiers = new ArrayList<>();
+        if (cell.getX() - 1 >= 0) {
+            Cell newCell = new Cell(cell.getX() - 1, cell.getY());
+            if (!maze.getVisit(cell.getX() - 1, cell.getY())) {
+                frontiers.add(newCell);
+                maze.setVisit(cell.getX() - 1, cell.getY());
+            }
+
+        }
+        return frontiers;
+    }
+
 }

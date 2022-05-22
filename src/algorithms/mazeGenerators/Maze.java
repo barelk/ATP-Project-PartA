@@ -1,4 +1,7 @@
 package algorithms.mazeGenerators;
+
+import java.util.Arrays;
+
 public class Maze {
     private int col;
     private int row;
@@ -45,12 +48,15 @@ public class Maze {
     public void setMatrix(int[][] matrix) {
         this.matrix = matrix;
     }
-    public void printaze(){
+    public void myPrint(){
         for(int i=0; i<row;i++){
             for(int j=0; j<col;j++){
                 System.out.print(this.matrix[i][j]+"\t");
             }
             System.out.println();
         }
+    }
+    public String toString() {
+        return Arrays.toString(matrix);
     }
 }
